@@ -68,8 +68,8 @@
     .hero-btn.visible { transform: translateY(0); opacity:1; }
 
     /* Scroll animations for sections */
-    .section { opacity:0; transform: translateY(30px); transition: all 1s ease-out; }
-    .section.visible { opacity:1; transform: translateY(0); }
+    /*.section { opacity:0; transform: translateY(30px); transition: all 1s ease-out; }*/
+    /*.section.visible { opacity:1; transform: translateY(0); }*/
 
     /* Hover effects */
     .project-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
