@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="static/styles.css">
+  <title>Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { darkMode: 'class' }</script>
+</head>
+<body class="bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-500" style="margin:0;">
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="gradient-spinner"></div>
+  </div>
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full bg-white dark:bg-gray-800 shadow-md z-50 transition-colors duration-500">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center w-full">
+            <!-- Logo / Brand -->
+            <h1 class="text-2xl font-bold text-indigo-600 dark:text-indigo-400"><a href="#home" style="color:rgb(6, 214, 20);">MyPORTFOLIO</a></h1>
+
+            <!-- Navigation links (optional desktop menu) -->
+            <ul class="hidden sm:flex space-x-6 ml-6">
+                <li><a href="#home" class="font-bold hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-100 dark:hover:bg-indigo-900 px-3 py-2 rounded transition-colors">Home</a></li>
+                <li><a href="#about" class="font-bold hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-100 dark:hover:bg-indigo-900 px-3 py-2 rounded transition-colors">About</a></li>
+                <li><a href="#projects" class="font-bold hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-100 dark:hover:bg-indigo-900 px-3 py-2 rounded transition-colors">Projects</a></li>
+            </ul>
+
+            <!-- Right-aligned controls -->
+            <div class="flex items-center ml-auto space-x-2">
+                <button id="darkToggle"
+                    class="px-3 py-2 rounded-lg bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-gray-100 hover:bg-gray-300 dark:hover:bg-gray-600 transition">
+                    🌙
+                </button>
+
+                <!-- Hamburger for mobile -->
+                <button id="hamburger" class="hamburger sm:hidden flex flex-col justify-center items-center ml-2">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="fixed top-16 left-0 w-full bg-white dark:bg-gray-800 shadow-md z-40 sm:hidden flex flex-col items-center py-6 space-y-4 hidden transition-all duration-300">
+                <a href="#home" class="block w-full text-center py-2 text-lg font-semibold hover:text-indigo-600 dark:hover:text-indigo-400">Home</a>
+                <a href="#about" class="block w-full text-center py-2 text-lg font-semibold hover:text-indigo-600 dark:hover:text-indigo-400">About</a>
+                <a href="#projects" class="block w-full text-center py-2 text-lg font-semibold hover:text-indigo-600 dark:hover:text-indigo-400">Projects</a>
+            </div>
+        </div>
+    </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="min-h-screen w-full flex flex-col justify-center items-center text-center text-white px-0 section" style="position:relative; z-index:1;">
+    <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">Hi, I'm Mun UDAM</h2>
+    <p id="heroText" class="text-md sm:text-lg md:text-xl mb-6 max-w-xl text-center"></p>
+    <a href="#projects" style="font-weight: bold;"><button id="heroButton" class="hero-btn bg-white text-indigo-600 dark:bg-gray-800 dark:text-gray-200 px-6 py-3 rounded-lg shadow-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-300">View My Work</button></a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 sm:py-20 max-w-5xl mx-auto px-4 sm:px-6 section">
+    <h2 class="text-2xl sm:text-3xl font-bold text-center mb-10">About Me</h2>
+    <div class="grid md:grid-cols-2 gap-8 md:gap-10 items-center">
+      <img src="image/66385C16-D434-4A4A-8368-89BF7ECF89E4.JPG" alt="profile" class="rounded-2xl shadow-lg w-full md:w-auto">
+      <p class="text-lg sm:text-xl md:text-2xl leading-relaxed pt-10 text-left font-bold">
+        &nbsp;&nbsp;&nbsp;&nbsp;I'm a developer with a passion for creating dynamic and responsive web applications.
+        Have experience with C Programming, C++ Programming, C# Programming, JAVA, Python, Flask framework, JavaScript and CSS. I love solving problems and bringing ideas to life through code.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 sm:py-20 bg-gray-50 dark:bg-gray-800 section">
+    <h2 class="text-2xl sm:text-3xl font-bold text-center mb-12">Python Programming Language Projects Research</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="project-card bg-white dark:bg-gray-700 rounded-2xl shadow-md overflow-hidden hover:scale-105 hover:shadow-xl transition">
+        <img src="image/logo1.png" alt="project" class="w-full object-cover">
+        <div class="p-4 sm:p-5">
+          <h3 class="text-lg sm:text-xl font-semibold">Project Python 🐍 <span style="color:blue;">Command tool</span></h3>
+          <p class="text-gray-600 dark:text-gray-300 mt-2 text-sm sm:text-md">
+            Tool : YouTube Downloader For Windows_OS<br>
+            OS Support : Windows<br>
+            Requirement : Python Package install, FFmpeg, yt-dlp<br>
+            Step1: Download Python Package and install like general application<br>
+            Step2: Install FFmpeg using pip : pip install ffmpeg<br>
+            Step3: Install yt-dlp using pip : pip install yt-dlp<br>
+            Step4: <span><a href="Hello" style="color: rgb(6, 214, 20); font-weight: bold;">Download</a></span> Source tool<br>
+            Step5: Run code from location that your input it. Enjoy!!!<br>
+            Note : where you can get source : (python.org | ffmpeg.org)
+          </p>
+        </div>
+      </div>
+      <div class="project-card bg-white dark:bg-gray-700 rounded-2xl shadow-md overflow-hidden hover:scale-105 hover:shadow-xl transition">
+        <img src="image/logo2.png" alt="project" class="w-full object-cover">
+        <div class="p-4 sm:p-5">
+          <h3 class="text-lg sm:text-xl font-semibold">Project Python 🐍 <span style="color:blue;">Command tool</span></h3>
+          <p class="text-gray-600 dark:text-gray-300 mt-2 text-sm sm:text-md">
+            Tool : YouTube Downloader For Mac_OS<br>
+            OS Support : Mac<br>
+            Requirement : homebrew install, anaconda, FFmpeg, yt-dlp<br>
+            Step1: Install homebrew using command<br>
+            Step2: Using homebrew to install ffmpeg<br>
+            Step3: Download install anaconda package<br>
+            Step4: Using pip install yt-dlp<br>
+            Step5: <span><a href="https://drive.google.com/uc?export=download&id=1wNbBiE4OHT6VgsWbemNDbIGwG7aYEcdX" style="color:rgb(6, 214, 20); font-weight: bold;">Download</a></span> Source tool<br>
+            Step6: Run code from location that your input it. Enjoy!!!<br>
+            Note : where you can get source : (brew.sh | anaconda.com)
+          </p>
+        </div>
+      </div>
+      <div class="project-card bg-white dark:bg-gray-700 rounded-2xl shadow-md overflow-hidden hover:scale-105 hover:shadow-xl transition">
+        <img src="image/logo_1.png" alt="project" class="w-full object-cover">
+        <div class="p-4 sm:p-5">
+          <h3 class="text-lg sm:text-xl font-semibold">Project Python 🐍 <span style="color:blue;">Tool</span></h3>
+          <p class="text-gray-600 dark:text-gray-300 mt-2 text-sm sm:text-md">Tool for Create QR code to use phone scan connect wifi without input password by manual.</p>
+        </div>
+      </div>
+      <div class="project-card bg-white dark:bg-gray-700 rounded-2xl shadow-md overflow-hidden hover:scale-105 hover:shadow-xl transition">
+        <img src="image/logo_2.png" alt="project" class="w-full object-cover">
+        <div class="p-4 sm:p-5">
+          <h3 class="text-lg sm:text-xl font-semibold">Project Python 🐍 <span style="color:blue;">Flask Framework</span></h3>
+          <p class="text-gray-600 dark:text-gray-300 mt-2 text-sm sm:text-md">Web tool that allow user convert there picture to ascii art.</p>
+        </div>
+      </div>
+      <div class="project-card bg-white dark:bg-gray-700 rounded-2xl shadow-md overflow-hidden hover:scale-105 hover:shadow-xl transition">
+        <img src="image/logo_i1.png" alt="project" class="w-full object-cover">
+        <div class="p-4 sm:p-5">
+          <h3 class="text-lg sm:text-xl font-semibold">Project Python 🐍 <span style="color:blue;">Flask Framework</span></h3>
+          <p class="text-gray-600 dark:text-gray-300 mt-2 text-sm sm:text-md">Web tool that allow user make upscale pictures.</p>
+        </div>
+      </div>
+      <div class="project-card bg-white dark:bg-gray-700 rounded-2xl shadow-md overflow-hidden hover:scale-105 hover:shadow-xl transition">
+        <img src="image/logo_i2.jpg" alt="project" class="w-full object-cover">
+        <div class="p-4 sm:p-5">
+          <h3 class="text-lg sm:text-xl font-semibold">Project Python 🐍 <span style="color:blue;">Telegram bot</span></h3>
+          <p class="text-gray-600 dark:text-gray-300 mt-2 text-sm sm:text-md">Telegram bot that allow user paste link YouTube to download mp3 song.</p>
+        </div>
+      </div>
+      <div class="project-card bg-white dark:bg-gray-700 rounded-2xl shadow-md overflow-hidden hover:scale-105 hover:shadow-xl transition">
+        <img src="image/logo_i3.png" alt="project" class="w-full object-cover">
+        <div class="p-4 sm:p-5">
+          <h3 class="text-lg sm:text-xl font-semibold">Project Python 🐍 <span style="color:blue;">Flask Framework</span></h3>
+          <p class="text-gray-600 dark:text-gray-300 mt-2 text-sm sm:text-md">Web tool that allow user to make remove image background and save as png.</p>
+        </div>
+      </div>
+      <div class="project-card bg-white dark:bg-gray-700 rounded-2xl shadow-md overflow-hidden hover:scale-105 hover:shadow-xl transition">
+        <img src="image/logo_i4.png" alt="project" class="w-full object-cover">
+        <div class="p-4 sm:p-5">
+          <h3 class="text-lg sm:text-xl font-semibold">Project Python 🐍 <span style="color:blue;">Flask Framework</span></h3>
+          <p class="text-gray-600 dark:text-gray-300 mt-2 text-sm sm:text-md">Web tool that allow user to set watermark on picture.</p>
+        </div>
+      </div>
+      <div class="project-card bg-white dark:bg-gray-700 rounded-2xl shadow-md overflow-hidden hover:scale-105 hover:shadow-xl transition">
+        <img src="image/logo_i5.png" alt="project" class="w-full object-cover">
+        <div class="p-4 sm:p-5">
+          <h3 class="text-lg sm:text-xl font-semibold">Project Python 🐍 <span style="color:blue;">Tool</span></h3>
+          <p class="text-gray-600 dark:text-gray-300 mt-2 text-sm sm:text-md">Python tool that allow user use for make short link.</p>
+        </div>
+      </div>
+      <div class="project-card bg-white dark:bg-gray-700 rounded-2xl shadow-md overflow-hidden hover:scale-105 hover:shadow-xl transition">
+        <img src="image/logo_i6.png" alt="project" class="w-full object-cover">
+        <div class="p-4 sm:p-5">
+          <h3 class="text-lg sm:text-xl font-semibold">Project Python 🐍 <span style="color:blue;">Flask Framework</span></h3>
+          <p class="text-gray-600 dark:text-gray-300 mt-2 text-sm sm:text-md">Web tool that allow user use for set frame picture.</p>
+        </div>
+      </div>
+      <div class="project-card bg-white dark:bg-gray-700 rounded-2xl shadow-md overflow-hidden hover:scale-105 hover:shadow-xl transition">
+        <img src="image/logo_i7.png" alt="project" class="w-full object-cover">
+        <div class="p-4 sm:p-5">
+          <h3 class="text-lg sm:text-xl font-semibold">Project Python 🐍 <span style="color:blue;">Flask Framework</span></h3>
+          <p class="text-gray-600 dark:text-gray-300 mt-2 text-sm sm:text-md">Web tool that allow user use for collect multiple pictures as onlyone picture.</p>
+        </div>
+      </div>
+      <div class="project-card bg-white dark:bg-gray-700 rounded-2xl shadow-md overflow-hidden hover:scale-105 hover:shadow-xl transition">
+        <img src="image/logo_i8.jpg" alt="project" class="w-full object-cover">
+        <div class="p-4 sm:p-5">
+          <h3 class="text-lg sm:text-xl font-semibold">Project Python 🐍 <span style="color:blue;">Application</span></h3>
+          <p class="text-gray-600 dark:text-gray-300 mt-2 text-sm sm:text-md">Application that allow user use for read data or information from QR code.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="py-6 text-center bg-gray-800 text-gray-300 dark:bg-gray-900 dark:text-gray-400">
+    © 2025 Mun UDAM | All Rights Reserved
+  </footer>
+  <script src="static/script.js"></script>
+</body>
+</html>
