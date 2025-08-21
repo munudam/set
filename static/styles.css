@@ -1,5 +1,5 @@
-body { opacity: 0; }
-    body.fade-in { opacity: 1; transition: opacity 0.6s ease; }
+    /*body { opacity: 0; }*/
+    /*body.fade-in { opacity: 1; transition: opacity 0.6s ease; }*/
 
     /* Responsive tweaks */
     @media (max-width: 640px) {
