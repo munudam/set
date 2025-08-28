@@ -67,7 +67,7 @@ const preloader = document.getElementById('preloader');
       preloader.classList.add('hidden');
       document.body.classList.add('fade-in');
 
-      const fullText = "A Passionate Technology Developer 🚀";
+      const fullText = "Make easily work with technology 🚀";
       let index = 0;
       let typing = true;
 
