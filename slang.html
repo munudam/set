@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slang Dictionary</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="background-gradient"></div>
+
+  <div class="container">
+    <div class="header">
+      <h1 class="title">📘 Slang Dictionary</h1>
+      <p class="subtitle">Discover the meaning of modern slang words</p>
+    </div>
+
+    <div class="search-section">
+      <div class="search-wrapper">
+        <input 
+          type="text" 
+          id="searchInput" 
+          class="search-input"
+          placeholder="Search a word..." 
+          onkeyup="searchWord()"
+        />
+        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <path d="m21 21-4.35-4.35"></path>
+        </svg>
+      </div>
+    </div>
+
+    <div id="result" class="result-container"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
